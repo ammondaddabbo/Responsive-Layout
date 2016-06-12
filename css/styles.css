@@ -19,6 +19,10 @@ p {
   padding: 1em;
 }
 
+figure {
+  margin: 1em;
+}
+
 .main-header {
   color: #0f0;
   font-size: 1em;
@@ -137,6 +141,8 @@ ul {
 
 .main-footer {
   color: #3f3;
+  clear: both;
+  margin: 0 auto;
 }
 
 .main-footer a {
@@ -151,16 +157,16 @@ ul {
 
 .left {
   display: inline-block;
+  max-width: 40%;
   float: left;
-  margin: 10px;
   padding: 10px;
 }
 
 .right {
   display: inline-block;
+  max-width: 50%;
   float: right;
   text-transform: uppercase;
-  margin: 10px;
   padding: 10px;
 }
 
@@ -174,7 +180,7 @@ ul {
 ============================*/
 
 @media (min-width: 768px) {
-  
+
   .main-nav li {
     display: inline-block;
     margin: .75em;
@@ -206,38 +212,46 @@ ul {
   }
 
   .col1 {
+    max-height: 355.53px;
     width: 50%;
     float: left;
     margin-bottom: 2em;
   }
 
   .col2 {
+    max-height: 355.53px;
     width: 50%;
     float: right;
     margin-bottom: 2em;
   }
 
-  #contact {
-    max-height: inherit;
-  }
-
   .contact-info {
     padding: 1em 10em;
+    clear: both;
   }
 
   .right {
     visibility: hidden;
   }
 
+  .main-footer {
+    min-width: 100%;
+  }
+
+  .footer-nav {
+    float: right;
+  }
+
   .footer-nav a {
     visibility: visible;
-    max-width: 768px;
     display: inline-block;
-    float: right;
     text-transform: uppercase;
-    margin: 10px;
     padding: 10px;
-  } 
+  }
+
+  .footer-nav li {
+    float: left;
+  }
 
 
 
@@ -265,7 +279,7 @@ ul {
     padding: 0;
     font-size: 1.25em;
   }
-  
+
   .intro p {
     clear: left;
     max-width: 1024px;
@@ -282,6 +296,11 @@ ul {
     max-width: 1024px;
     clear: both;
   }
+
+  figure {
+    margin: 0;
+  }
+
 /* 5 * 5 = 25%  */
   .col1 {
     width: 28.3333%;
@@ -299,6 +318,18 @@ ul {
     clear: both;
   }
 
+  .main-footer {
+    min-width: 100%;
+  }
+
+  .footer-nav {
+    float: right;
+  }
+
+  .footer-nav li {
+    display: inline-block;
+  }
+
 
 
 }
@@ -314,12 +345,3 @@ ul {
   display: table;
   clear: both;
 }
-
-
-
-
-
-
-
-
-
